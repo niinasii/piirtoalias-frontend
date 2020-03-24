@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Platform, StyleSheet, Text, View } from 'react-native';
+import {StyleSheet, Text, View } from 'react-native';
 import ChatViesti from './src/components/ChatViesti'
 
 export default class App extends Component {

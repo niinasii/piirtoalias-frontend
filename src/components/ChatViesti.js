@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { TextInput, Text, View } from 'react-native'
+import {Button, TextInput, Text, View } from 'react-native'
 import io from 'socket.io-client'
 
 export default class ChatViesti extends Component {
@@ -27,16 +27,19 @@ this.setState({ chatMessage: "" })
     const chatMessages = this.state.chatMessages.map(chatMessage => <Text key={chatMessage}>{chatMessage}</Text>)
         return (
             <View>
-
+                {chatMessages}
                 <TextInput 
-                style={{height: 40, borderWidth: 2}}
+                style={{height: 40, width: 200, borderWidth: 1}}
                 autoCorrect={false}
                 value={this.state.chatMessage}
                 onSubmitEditing={()=> this.submitChatMessage()}
                 onChangeText={chatMessage => {
                     this.setState({chatMessage})
                 }}/>
-                {chatMessages}
+                <View style={[{ width: 60, margin: 10, backgroundColor: "red" }]}>
+                <Button title="Send" style={{height: 40, width: 200}} onPress={()=> this.submitChatMessage()}/>
+                </View>
+                
             </View>
         )
     }
