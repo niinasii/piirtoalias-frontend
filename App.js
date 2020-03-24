@@ -7,7 +7,7 @@ export default class App extends Component {
   render() {
     return (
       <View>
-        <Text style={styles.container}>Piirto Alias</Text>
+        <Text style={styles.container}>Piirto-Alias</Text>
         <ArvattavaSana />
         <ChatViesti />
       </View>
