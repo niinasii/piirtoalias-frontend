@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Text, View } from 'react-native'
+import { StyleSheet, Text, TextInput, View, Image, TouchableHighlight } from 'react-native';
 
 export default class ViestinLahetys extends Component {
     render() {
