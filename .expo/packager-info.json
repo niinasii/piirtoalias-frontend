@@ -2,9 +2,9 @@
   "devToolsPort": 19002,
   "expoServerPort": 19000,
   "packagerPort": 19001,
-  "packagerPid": 1768,
-  "expoServerNgrokUrl": null,
-  "packagerNgrokUrl": null,
-  "ngrokPid": null,
+  "packagerPid": 6500,
+  "expoServerNgrokUrl": "https://h7-8bc.anonymous.piirtoalias-frontend.exp.direct",
+  "packagerNgrokUrl": "https://packager.h7-8bc.anonymous.piirtoalias-frontend.exp.direct",
+  "ngrokPid": 12748,
   "webpackServerPort": 19006
 }
